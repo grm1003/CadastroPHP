@@ -3,9 +3,10 @@
 <head>
     <title>Aprendendo PHP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="" method="POST" class="col-sm-12 col-md-8 col-xl-6 container center">
+<form action="" method="POST" class="col-sm-12 col-md-8 col-xl-6 container center box-input">
             <div class="form-floating mb-3"> 
                 <input type="text" class="form-control" id="usuario" name="usuario" placeholder="111111111">
                 <label for="floatingInput">CPF</label>
@@ -14,11 +15,13 @@
                 <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
                 <label for="floatingPassword">Senha</label>
             </div>
-            <input type="submit" value="Entrar"/>
+            <div class="d-flex justify-content-center">
+            <input class="botao" type="submit" value="Entrar"/>
+            </div>
         </form>
-        <div class="container mt-5">
-            <form action="cadastro.php" method="post">
-            <input type="submit" value="Cadastrar">
+        <div class="d-flex justify-content-center ">
+            <form  action="cadastro.php" method="post">
+                <input class="botao" type="submit" value="Cadastrar">
             </form>
         </div>
 <?php
